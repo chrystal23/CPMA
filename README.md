@@ -1,0 +1,2 @@
+# CPMA
+R package CPMA
