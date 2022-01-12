@@ -1,0 +1,15 @@
+Package: CPMA
+Type: Package
+Title: Change plane (Point) model average for subgroup identification
+Version: 1.0
+Date: 2022-01-22
+Author: Pan Liu, Jialiang Li, Yaguang Li 
+Maintainer: Pan Liu <e0647249@u.nus.edu>
+Depends: R (>= 4.0.0), stats, grpreg, plus, BB, ncvreg, nloptr
+Description: Tools for subgroup identification and response prediction through change plane (point) model average method.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2022-01-12 19:37:16 UTC; kryst
