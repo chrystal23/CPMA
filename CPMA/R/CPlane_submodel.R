@@ -277,7 +277,7 @@ smooth <- function(X, Y, Z, l, len=1, s.est, ini.a = c(0, rep(0, length.out = s.
     fit.a <- BBoptim(par = a.hat0, fn = obj.f_a, lower = rep(-2,s.est), upper = rep(2,s.est),
                      X=Xo, Y=Yo, Z=Zo, l=l, len=len, theta = theta.hat0, beta = beta.hat, delta = delta.hat, h = h )
     a.hat <- fit.a$par
-    cat('a=', a.hat, '\n')
+    #cat('a=', a.hat, '\n')
 
     ## given beta, a, estimate theta
     fit.theta <- nloptr(x0 = theta.hat0, eval_f = obj.f_theta, lb = rep(-1,lt-1), ub = rep(1,lt-1),
@@ -364,7 +364,7 @@ subm.fun <- function(X, Y, Z, l, len=1, ini.theta, tol= 1e-4, K= 10){
 
       ############### step 2
       ## smoothing estimate with initial (theta, a, beta, delta)
-      cat('ahat0=', a.hat0, '\n')
+      #cat('ahat0=', a.hat0, '\n')
       sm.obj <- smooth(X=Xo, Y=Yo, Z=Zo, l=l, len=len, s.est=s.est, ini.a=a.hat0,
                        ini.theta=theta.hat0, tol=tol/10, K=K)
       theta.hat <- sm.obj$theta.hat

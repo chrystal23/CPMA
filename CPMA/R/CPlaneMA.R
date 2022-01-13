@@ -130,7 +130,7 @@ CPlaneMA <- function(data.tr, data.te=NULL, yind, xind, zind,
 
     result[[l]] <- list(train.res=train.res, test.res=test.res)
 
-    print(l)
+    #print(l)
 
   }
 
