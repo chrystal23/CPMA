@@ -5,7 +5,7 @@ CPMA is an `R` package to implement the change plane (point) model average metho
 ## Installation
 ```r
 # install.packages("devtools")
-devtools::install_github("chrystal23/CPMA")
+devtools::install_github("chrystal23/CPMA/CPMA")
 ```
 
 ## Description
